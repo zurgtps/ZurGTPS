@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZurPS - Server</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cyber-effects"></div>
+    
+    <!-- Floating Particles - Reduced -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">ZurPS</div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="https://dsc.gg/dclu" target="_blank" title="Join Discord">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </li>
+                <li>
+                    <a href="tinyurl.com/gruplu" target="_blank" title="Hubungi WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Whatsapp
+                    </a>
+                </li>
+                <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+                <li><a href="#host"><i class="fas fa-server"></i> Host</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-indicator"></div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#home" onclick="toggleMobileMenu()"><i class="fas fa-house"></i> Home</a>
+        <a href="#host" onclick="toggleMobileMenu()"><i class="fas fa-server"></i> Host</a>
+        <a href="https://dsc.gg/dclu" target="_blank">
+            <i class="fab fa-discord"></i> Discord
+        </a>
+        <a href="tinyurl.com/weblu" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+    <section id="home">
+        <h1 class="section-title">ZurPS Server</h1>
+        <p class="section-subtitle">
+            ZurPS adalah Private Server
+            dikembangkan oleh Zur server ini telah berdiri selama hampir 1 tahun,
+            dari tahun 2021. Saat ini ZurPS membuat versi terbaik dari GTPS terdahulu dan membawa perbedaan.
+        </p>
+        <div class="card-grid">
+            <div class="card status-card">
+                <i class="fas fa-server card-icon"></i>
+                <h3 class="card-title">Growtopia Status</h3>
+                <div id="server-status" class="status-indicator">
+                    <span id="status-indicator">🟢 Server Online</span>
+                </div>
+                <div id="uptime-display" class="card-description">Server Status</div>
+            </div>
+            <div class="card">
+                <i class="fas fa-gift card-icon"></i>
+                <h3 class="card-title">Daily Giveaway</h3>
+                <p class="card-description">Setiap Hari Berbagi Gacha Dan Custom Item Di Jam Malam</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-coins card-icon"></i>
+                <h3 class="card-title">Medium Economy</h3>
+                <p class="card-description">Lumayan mudah untuk mendapatkan World Lock, dan tidak ada sistem donasi dari
+                    role unlimited</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-clock card-icon"></i>
+                <h3 class="card-title">Server Online 24/7</h3>
+                <p class="card-description">Server selalu aktif 24 jam nonstop</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users card-icon"></i>
+                <h3 class="card-title">Player Friendly</h3>
+                <p class="card-description">Player Growtopia yang ramah dan tidak sombong</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt card-icon"></i>
+                <h3 class="card-title">Mods Friendly</h3>
+                <p class="card-description">Mods yang selalu aktif dan selalu membantu player yang memiliki kendala</p>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="https://discord.gg/EAFXWAXNfy" target="_blank" class="btn-primary">
+                Play Growtopia
+            </a>
+        </div>
+    </section>
+    <section id="host">
+        <h1 class="section-title">Host WyvernPS</h1>
+        <p class="section-subtitle">
+            Kami menyediakan banyak host yang bisa kalian gunakan untuk bermain Growtopia,
+            dengan server yang stabil dan cepat, kalian bisa bermain dengan nyaman tanpa gangguan.
+        </p>
+        <div class="card-grid">
+            <div class="card host-card">
+                <button class="copy-btn" data-copy="91.134.85.13 growtopia1.com
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com
+">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <i class="fas fa-mobile-alt card-icon"></i>
+                <h3 class="card-title">Host Go</h3>
+                <div class="host-info">
+91.134.85.13 growtopia1.<br>
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com
+
+                </div>
+            </div>
+            <div class="card host-card">
+                <button class="copy-btn" data-copy="https://growsoft.cc/android.txt">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <i class="fas fa-bolt card-icon"></i>
+                <h3 class="card-title">Power Tunnel</h3>
+                <div class="host-info">
+                    https://growsoft.cc/android.txt
+                </div>
+            </div>
+            <div class="card host-card">
+                <button class="copy-btn" data-copy="[General]
+bypass-system = true
+
+[Rule]
+FINAL,DIRECT
+
+[Host]
+growtopia1.com = 91.134.85.13
+growtopia2.com = 91.134.85.13
+www.growtopia1.com = 91.134.85.13
+www.growtopia2.com = 91.134.85.13">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <i class="fab fa-apple card-icon"></i>
+                <h3 class="card-title">IOS SURGE</h3>
+                <div class="host-info">
+[General]
+bypass-system = true
+
+[Rule]
+FINAL,DIRECT
+
+[Host]
+growtopia1.com = 91.134.85.13
+growtopia2.com = 91.134.85.13
+www.growtopia1.com = 91.134.85.13
+www.growtopia2.com = 91.134.85.13
+                </div>
+            </div>
+            <div class="card host-card">
+                <button class="copy-btn" data-copy="91.134.85.13 growtopia1.com
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com
+">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <i class="fab fa-windows card-icon"></i>
+                <h3 class="card-title">Windows</h3>
+                <div class="host-info">
+91.134.85.13 growtopia1.<br>
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com
+
+                </div>
+            </div>
+            <div class="card host-card" onclick="window.open('/comingsoon.rar', '_blank')">
+                <i class="fas fa-desktop card-icon"></i>
+                <h3 class="card-title">PC Launcher</h3>
+                <p class="card-description">Click here to download PC launcher</p>
+            </div>
+            <div class="card host-card" onclick="window.open('https://www.mediafire.com/file/99xylwpysecvgne/spotyps.txt/file', '_blank')">
+                <i class="fas fa-download card-icon"></i>
+                <h3 class="card-title">Virtual Host</h3>
+                <p class="card-description">Click here to download host file</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 <strong>ZurPS</strong>. All content created by <strong>SkyDev</strong>.</p>
+    </footer>
+    <div id="toast" class="toast">Teks berhasil disalin!</div>
+    <script src="script.js"></script>
+</body>
+</html>
